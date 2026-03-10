@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена | WebHapa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236366f1'><path d='M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z'/></svg>">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+            padding: 24px;
+        }
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+        .error-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+        .error-text {
+            font-size: 18px;
+            color: #6b7280;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .error-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-link {
+            padding: 14px 28px;
+            background: #6d28d9;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .error-link:hover {
+            background: #5b21b6;
+            transform: translateY(-2px);
+        }
+        .error-link.secondary {
+            background: white;
+            color: #6d28d9;
+            border: 2px solid #e5e7eb;
+        }
+        .error-link.secondary:hover {
+            border-color: #6d28d9;
+            background: rgba(109, 40, 217, 0.04);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Страница не найдена</h1>
+            <p class="error-text">
+                К сожалению, запрашиваемая страница не существует или была перемещена.
+                Но мы можем помочь вам найти то, что вы ищете!
+            </p>
+            <div class="error-links">
+                <a href="/" class="error-link">На главную</a>
+                <a href="/#works" class="error-link secondary">Наши работы</a>
+                <a href="https://t.me/lovebatory" class="error-link secondary" target="_blank">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
